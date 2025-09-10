@@ -2,13 +2,14 @@
 #include <iostream>
 
 /*
-    countDown(3)                print 3
-        countDown(2)            print 2
-            countDown(1)        print 1
-                countDown(0)    return
-            countDown(1)        return
-        countDown(2)            return
-    countDown(3)                return
+    Start of countDown(3)                print 3
+        Start of countDown(2)            print 2
+            Start OfcountDown(1)         print 1
+                Start of Countdown(0)
+                Return countDown(0)    return
+            Return countDown(1)        return
+        Return countDown(2)            return
+    ReturncountDown(3)                return
 */
 void countDown(int n)               // void recursive function
 {
@@ -39,9 +40,9 @@ int summation(int n)                // non-void recursive function
 int main() {
     std::cout << std::endl;
 
-    countDown(3);
+    countDown(10);
 
-    std::cout << std::endl << summation(3) << std::endl;  
+    std::cout << std::endl << summation(5) << std::endl;  
 
     std::cout << std::endl;
     return 0;

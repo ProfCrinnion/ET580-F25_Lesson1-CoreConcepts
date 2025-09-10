@@ -14,7 +14,7 @@ namespace et580                         // create an et570 namespace
 
 int main() 
 {
-    cout << "endl";
+    cout << endl;
 
     {
         using namespace et575;          // et575 code block

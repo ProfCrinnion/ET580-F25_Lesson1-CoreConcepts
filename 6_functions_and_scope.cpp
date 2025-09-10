@@ -1,7 +1,7 @@
 // S. Trowbridge 2024
 #include <iostream>
 
-int x = 0;                          // global variable
+int x = 99;                          // global variable
 
 void print(int a)        
 {
@@ -21,7 +21,8 @@ void increment(int &b)
 int main() {
     std::cout << std::endl;
 
-    int i = 0;
+    int i = 5;
+
 
     std::cout << x << "\n";         // x has local scope (x is local to main)       
     std::cout << i << "\n\n";       // x has global scope   
@@ -29,6 +30,8 @@ int main() {
  
     print(i);
     increment(i);
+
+    std::cout << i << std::endl;
 
     std::cout << std::endl;
     return 0;

@@ -3,7 +3,10 @@
 
 void print(int n)                  // pass by value: the value of i which was copied to n
 {
-    std::cout << n << "\n";   
+    std::cout << n << "\n"; 
+    n = n * 66;  
+    std::cout << n << "\n"; 
+
 }
 void increment(int &n)             // pass by reference: similar to int &n = i
 {
